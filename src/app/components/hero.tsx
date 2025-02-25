@@ -26,7 +26,7 @@ export const Hero = () => {
       </div>
 
       {/* Header */}
-      <header className="relative z-10 flex items-center justify-between py-12 max-w-[1500px] mx-auto">
+      <header className="relative z-10 flex items-center justify-between py-12 max-w-[1500px] mx-auto px-6">
         <div className="flex items-center gap-2 text-2xl font-bold">
           <Image
             src="/images/text-logo.png"
