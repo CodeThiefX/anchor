@@ -45,7 +45,7 @@ export default function FAQSection() {
           <h2 className="text-4xl md:text-6xl font-bold">FAQs</h2>
           <Button
             variant="link"
-            className="text-white gap-2 group hidden md:block"
+            className="text-white gap-2 group hidden md:flex"
           >
             Some frequently asked questions
             <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />

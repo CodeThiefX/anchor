@@ -98,7 +98,7 @@ export default function FeaturesSection() {
           </div>
 
           {/* Right Column - Features Grid */}
-          <div className="md:col-span-8 grid md:grid-cols-2 gap-6">
+          <div className="md:col-span-8 grid md:grid-cols-2 gap-6 py-16 md:py-0">
             {/* Fast & Secure Application */}
             <div className="bg-black backdrop-blur rounded-3xl p-8 border border-[#656565]">
               <h3 className="text-xl font-bold mb-4">

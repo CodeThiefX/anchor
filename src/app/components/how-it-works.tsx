@@ -10,7 +10,7 @@ export default function HowItWorks() {
           <h2 className="text-4xl md:text-5xl font-bold ">How It Works</h2>
           <Button
             variant="link"
-            className="text-white gap-2 group hidden md:block"
+            className="text-white gap-2 group hidden md:flex"
           >
             Step by step process
             <ArrowUpRight

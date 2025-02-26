@@ -64,7 +64,7 @@ export const Hero = () => {
             FAQs
           </a>
         </nav>
-        <Button className="bg-gradient-to-b from-[#FF4400] to-[#FF0000] hover:bg-[#F24E1E]/90 w-48 py-6 rounded-[10px] hidden md:block">
+        <Button className="bg-gradient-to-b from-[#FF4400] to-[#FF0000] hover:bg-[#F24E1E]/90 w-48 h-12 rounded-[10px] hidden md:block">
           Get Started
         </Button>
         <Menu className="md:hidden" />
@@ -79,7 +79,7 @@ export const Hero = () => {
 
           <div className="grid md:grid-cols-2 gap-8">
             {/* Loan Types */}
-            <div className="bg-[#2F2F2F]/40 rounded-[30px] overflow-hidden p-5 md:p-10">
+            <div className="bg-[#2F2F2F]/40 rounded-[30px] overflow-hidden p-5 md:p-10 h-fit">
               <div className="grid grid-cols-2 divide-x divide-white/30">
                 <div className="grid grid-rows-2 divide-y divide-white/30">
                   {/* Personal Loan */}
