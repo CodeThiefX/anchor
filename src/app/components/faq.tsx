@@ -43,7 +43,10 @@ export default function FAQSection() {
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center mb-16">
           <h2 className="text-4xl md:text-6xl font-bold">FAQs</h2>
-          <Button variant="link" className="text-white gap-2 group">
+          <Button
+            variant="link"
+            className="text-white gap-2 group hidden md:block"
+          >
             Some frequently asked questions
             <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
           </Button>
@@ -56,7 +59,7 @@ export default function FAQSection() {
               value={`item-${index}`}
               className="border-none"
             >
-              <AccordionTrigger className="bg-zinc-900/60 hover:bg-zinc-900 px-6 py-4 rounded-xl text-left text-lg font-medium data-[state=open]:rounded-b-none">
+              <AccordionTrigger className="bg-zinc-900/60 hover:bg-zinc-900 px-6 py-4 rounded-xl text-left text-sm md:text-lg font-medium data-[state=open]:rounded-b-none">
                 {faq.question}
               </AccordionTrigger>
               <AccordionContent className="bg-zinc-900/60 px-6 py-4 rounded-b-xl text-zinc-400">

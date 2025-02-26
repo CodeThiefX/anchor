@@ -46,7 +46,7 @@ export default function LoanTabsSection() {
   };
 
   return (
-    <section className="relative h-screen min-h-[800px] w-full overflow-hidden">
+    <section className="relative h-fit p-3 min-h-[800px] w-full overflow-hidden">
       {/* Background Images */}
       {Object.entries(tabData).map(([key, data]) => (
         <div
@@ -67,7 +67,7 @@ export default function LoanTabsSection() {
       ))}
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center h-full text-white px-6">
+      <div className="relative z-10 flex flex-col items-center justify-center h-full text-white px-6 py-16">
         <div className="text-center max-w-4xl mx-auto mb-8">
           <h2 className="text-4xl md:text-6xl font-bold mb-6">
             Loans, made effortless
@@ -124,7 +124,7 @@ export default function LoanTabsSection() {
               key={tab}
               onClick={() => setActiveTab(tab as TabType)}
               variant="outline"
-              className={`min-w-[120px] border-white rounded-full backdrop-blur-sm transition-colors
+              className={`md:min-w-[120px] border-white rounded-full backdrop-blur-sm transition-colors
                 ${
                   activeTab === tab
                     ? "bg-white text-black hover:bg-white/90"

@@ -7,9 +7,9 @@ export default function FeaturesSection() {
       <div className="max-w-[1500px] mx-auto">
         {/* Header */}
         <div className="flex justify-between">
-          <div className="w-1/3"></div>
-          <div className="w-2/3 text-left mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <div className="w-1/3 hidden md:block"></div>
+          <div className="md:w-2/3 md:text-left mb-16">
+            <h2 className="text-3xl md:text-5xl font-bold mb-6">
               Key Features & <span className="text-[#FF0000]">Benefits</span>
             </h2>
             <p className="text-white text-lg md:text-xl max-w-4xl">
@@ -86,7 +86,7 @@ export default function FeaturesSection() {
               loans quickly and effortlessly.
             </p>
             {/* Circular Badge */}
-            <div className="relative top-32 w-32 h-32">
+            <div className="relative md:top-32 w-32 h-32">
               <Image
                 src="/images/learn-more.png"
                 alt="Badge"

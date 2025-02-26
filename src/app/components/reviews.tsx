@@ -65,7 +65,7 @@ export default function ReviewsSection() {
             <span className="inline-block px-4 py-1 text-xs border border-white rounded-sm mb-6">
               REVIEWS
             </span>
-            <h2 className="text-4xl md:text-6xl font-bold">
+            <h2 className="text-2xl md:text-6xl font-bold">
               300+ Users Reviews
             </h2>
           </div>
@@ -95,13 +95,18 @@ export default function ReviewsSection() {
             style={{ transform: `translateX(-${activeIndex * 100}%)` }}
           >
             {reviews.map((review, index) => (
-              <div key={review.id} className="w-1/3 flex-shrink-0 pr-6">
+              <div
+                key={review.id}
+                className="w-full md:w-1/3 flex-shrink-0 pr-6"
+              >
                 <div
                   className={`h-full rounded-3xl p-8 ${
                     index === 0 ? "bg-[#F24E1E]" : "bg-zinc-900/60"
                   }`}
                 >
-                  <p className="text-xl mb-12 min-h-[120px]">{review.text}</p>
+                  <p className="text-sm md:text-xl mb-12 min-h-[120px]">
+                    {review.text}
+                  </p>
                   <div className="flex items-center gap-4">
                     <Image
                       src={review.avatar || "/placeholder.svg"}

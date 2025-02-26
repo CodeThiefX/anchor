@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="relative bg-black text-white px-6 pb-8">
       <div className="max-w-[1500px] mx-auto">
         {/* CTA Card */}
-        <div className="relative rounded-3xl p-12 mb-24 overflow-hidden">
+        <div className="relative rounded-3xl p-8 md:p-12 mb-24 overflow-hidden">
           {/* Background Pattern */}
           <div className="absolute inset-0">
             <Image
@@ -17,7 +17,7 @@ export default function Footer() {
             />
           </div>
 
-          <div className="relative flex items-center justify-between">
+          <div className="relative flex flex-col md:flex-row items-center justify-between">
             <div className="max-w-2xl">
               <Button
                 variant="secondary"
@@ -26,13 +26,13 @@ export default function Footer() {
               >
                 Apply today
               </Button>
-              <h2 className="text-3xl md:text-5xl font-bold">
+              <h2 className="text-xl md:text-5xl font-bold">
                 and enjoy flexible repayment plans with zero processing fees!
               </h2>
             </div>
 
             {/* Circular Text */}
-            <div className="relative w-[200px] h-[200px] hidden md:block">
+            <div className="relative w-[200px] h-[200px] mt-28 mb-10">
               <div className="absolute inset-0 animate-spin-slow">
                 <Image
                   src="/images/get-started.png"
@@ -45,7 +45,7 @@ export default function Footer() {
         </div>
 
         {/* Footer Navigation */}
-        <div className="grid grid-cols-3 gap-8 py-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 py-8">
           <div className="flex items-center">
             <div className="flex items-center gap-2 text-2xl font-bold">
               <Image
@@ -58,7 +58,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <nav className="flex justify-center gap-8">
+          <nav className="flex md:justify-center gap-8">
             <a href="#" className="hover:text-[#F24E1E] transition-colors">
               Home
             </a>
@@ -73,7 +73,7 @@ export default function Footer() {
             </a>
           </nav>
 
-          <div className="flex justify-end gap-8">
+          <div className="flex md:justify-end gap-8">
             <a href="#" className="hover:text-[#F24E1E] transition-colors">
               Instagram
             </a>
@@ -89,8 +89,8 @@ export default function Footer() {
         <div className="h-px bg-white/20 my-8" />
 
         {/* Footer Bottom */}
-        <div className="flex justify-between text-sm text-zinc-400">
-          <p>Copyright 2025 - Anchor By Realsify. All Rights Reserved</p>
+        <div className="flex flex-col md:flex-row gap-4 justify-between text-sm text-zinc-400">
+          <p>Copyright 2025 - Anchor. All Rights Reserved</p>
           <a href="#" className="hover:text-white transition-colors">
             Policy & Terms
           </a>

@@ -17,11 +17,17 @@ const CustomSlider = React.forwardRef<
     )}
     {...props}
   >
-    <SliderPrimitive.Track className="relative h-5 w-full grow overflow-hidden rounded-full bg-slate-200">
+    <SliderPrimitive.Track className="relative h-3 md:h-5 w-full grow overflow-hidden rounded-full bg-slate-200">
       <SliderPrimitive.Range className="absolute h-full bg-[#FF0000]" />
     </SliderPrimitive.Track>
-    <SliderPrimitive.Thumb className="flex justify-center items-center h-10 w-10 rounded-full border-2 border-[#FF0000] bg-white ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50">
-      <Image src="/images/ver-bars.png" width={16} height={16} alt="wallet" />
+    <SliderPrimitive.Thumb className="flex justify-center items-center md:h-10 md:w-10 h-5 w-5 rounded-full border-2 border-[#FF0000] bg-white ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50">
+      <Image
+        src="/images/ver-bars.png"
+        className="w-[8px] h-[8px] md:w-[16px] md:h-[16px]"
+        width={16}
+        height={16}
+        alt="wallet"
+      />
     </SliderPrimitive.Thumb>
   </SliderPrimitive.Root>
 ));

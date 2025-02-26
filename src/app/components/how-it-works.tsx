@@ -7,8 +7,11 @@ export default function HowItWorks() {
     <section className="relative bg-black text-white py-24 px-6">
       <div className="max-w-[1500px] mx-auto">
         <div className="flex justify-between items-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold">How It Works</h2>
-          <Button variant="link" className="text-white gap-2 group">
+          <h2 className="text-4xl md:text-5xl font-bold ">How It Works</h2>
+          <Button
+            variant="link"
+            className="text-white gap-2 group hidden md:block"
+          >
             Step by step process
             <ArrowUpRight
               height={40}
@@ -26,11 +29,11 @@ export default function HowItWorks() {
               Fill out a simple loan application with property and financial
               details.
             </p>
-            <div className="relative h-[320px] md:h-[320px] items-end flex justify-end w-full px-10">
+            <div className="relative h-[200px] md:h-[320px] items-end flex justify-end w-full px-10">
               <Image
                 src="/images/phone-1.png"
                 alt="Apply Online Form"
-                className="w-[500px] md:w-[400px]"
+                className="w-[200px] md:w-[400px]"
                 width={1000}
                 height={1000}
               />
@@ -97,8 +100,8 @@ export default function HowItWorks() {
         </div>
 
         {/* Circular Badge */}
-        <div className="absolute bottom-12 left-1/2 -translate-x-1/2 md:left-24 md:translate-x-0">
-          <div className="relative w-32 h-32">
+        <div className="absolute md:bottom-12 bottom-16 left-16 -translate-x-1/2 md:left-24 md:translate-x-0">
+          <div className="relative md:w-32 md:h-32 w-16 h-16">
             <Image
               src="/images/how-it-works.png"
               alt="How it Works Badge"
