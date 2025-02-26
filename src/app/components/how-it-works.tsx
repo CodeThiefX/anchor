@@ -104,7 +104,7 @@ export default function HowItWorks() {
               alt="How it Works Badge"
               width={128}
               height={128}
-              className="animate-spin-slow"
+              // className="animate-spin-slow"
             />
             {/* <div className="absolute inset-0 flex items-center justify-center">
               <ArrowUpRight className="w-8 h-8" />

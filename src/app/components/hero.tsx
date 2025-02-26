@@ -32,8 +32,8 @@ export const Hero = () => {
             src="/images/text-logo.png"
             className="w-28"
             alt="Logo"
-            width={40}
-            height={40}
+            width={100}
+            height={100}
             priority
           />
         </div>
@@ -63,7 +63,7 @@ export const Hero = () => {
             FAQs
           </a>
         </nav>
-        <Button className="bg-[#FF0000] hover:bg-[#f27d1e]/90 w-48 py-6 rounded-[10px]">
+        <Button className="bg-gradient-to-b from-[#FF4400] to-[#FF0000] hover:bg-[#F24E1E]/90 w-48 py-6 rounded-[10px]">
           Get Started
         </Button>
       </header>
@@ -179,7 +179,7 @@ export const Hero = () => {
                   <span>NGN {formatCurrency(10000)}</span>
                   <span>NGN {formatCurrency(5000000)}</span>
                 </div>
-                <Button className="w-full bg-[#FF0000] hover:bg-[#FF0000]/90 text-white py-6">
+                <Button className="w-full bg-gradient-to-b from-[#FF4400] to-[#FF0000] hover:bg-[#F24E1E]/90 text-white py-6">
                   Get Started
                 </Button>
               </div>
