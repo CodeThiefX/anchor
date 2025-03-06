@@ -118,6 +118,7 @@ export default function DashboardPage() {
             <Button
               variant="ghost"
               className="flex flex-col items-center p-2 bg-red-50 hover:bg-red-100 rounded-xl h-auto gap-0"
+              onClick={() => (window.location.href = "/get-loan")}
             >
               <div className="w-10 h-10 bg-[#FFE9E1] rounded-full flex items-center justify-center">
                 <CartIcon color="#F56630" className="h-4 w-4 text-[#F24E1E]" />
