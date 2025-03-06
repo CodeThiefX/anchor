@@ -88,7 +88,7 @@ export default function GetLoanPage() {
                 onChange={(e) =>
                   handleInputChange("loanAmount", e.target.value)
                 }
-                placeholder="$"
+                placeholder="₦"
               />
             </div>
             <div>
@@ -155,7 +155,7 @@ export default function GetLoanPage() {
                 onChange={(e) =>
                   handleInputChange("estimatedValue", e.target.value)
                 }
-                placeholder="$"
+                placeholder="₦"
               />
             </div>
             <div>

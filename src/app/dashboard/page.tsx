@@ -72,12 +72,12 @@ export default function DashboardPage() {
             </span>
           </div>
           <div className="mb-4">
-            <h2 className="text-4xl font-bold">$45,823</h2>
+            <h2 className="text-4xl font-bold">₦45,823</h2>
           </div>
           <div className="space-y-2">
             <p className="text-gray-600 text-sm">
               Outstanding Balance:{" "}
-              <span className="text-black font-semibold">$1,873</span>
+              <span className="text-black font-semibold">₦1,873</span>
             </p>
             <p className="text-gray-600 text-sm">
               Property:{" "}
@@ -93,7 +93,7 @@ export default function DashboardPage() {
           <div className="flex justify-between items-start p-6">
             <div className="flex flex-col gap-4">
               <p className="text-gray-600 mb-1 text-sm">Upcoming Payment</p>
-              <h3 className="text-3xl font-bold">$1,873</h3>
+              <h3 className="text-3xl font-bold">₦1,873</h3>
             </div>
             <div className="text-right flex flex-col gap-4">
               <p className="text-gray-600 mb-1 text-sm">March 12th, 2025</p>
