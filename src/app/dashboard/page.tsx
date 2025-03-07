@@ -50,10 +50,15 @@ export default function DashboardPage() {
     <div className="min-h-screen bg-white">
       {/* Header */}
       <header className="bg-white px-6 py-4 flex justify-between items-center">
-        <Button variant="ghost" size="icon">
+        <Button
+          variant="ghost"
+          size="icon"
+          onClick={() => (window.location.href = "/profile")}
+          className="[&_svg]:size-7"
+        >
           <UserIcon strokeWidth={2.5} />
         </Button>
-        <Button variant="ghost" size="icon">
+        <Button variant="ghost" size="icon" className="[&_svg]:size-7">
           <Menu className="h-6 w-6" strokeWidth={2.5} />
         </Button>
       </header>
@@ -128,11 +133,31 @@ export default function DashboardPage() {
             <Button
               variant="ghost"
               className="flex flex-col items-center p-2 bg-red-50 hover:bg-red-100 rounded-xl h-auto gap-0"
+              onClick={() => (window.location.href = "/track-loan")}
             >
               <div className="w-10 h-10 bg-[#FFE9E1] rounded-full flex items-center justify-center">
                 <CartIcon color="#F56630" className="h-4 w-4 text-[#F24E1E]" />
               </div>
               <span className="text-xs">Track Loan</span>
+            </Button>
+            <Button
+              variant="ghost"
+              className="flex flex-col items-center p-2 bg-red-50 hover:bg-red-100 rounded-xl h-auto gap-0"
+              onClick={() => (window.location.href = "/repay-loan")}
+            >
+              <div className="w-10 h-10 bg-[#FFE9E1] rounded-full flex items-center justify-center">
+                <CartIcon color="#F56630" className="h-4 w-4 text-[#F24E1E]" />
+              </div>
+              <span className="text-xs">Repay Loan</span>
+            </Button>
+            <Button
+              variant="ghost"
+              className="flex flex-col items-center p-2 bg-red-50 hover:bg-red-100 rounded-xl h-auto gap-0"
+            >
+              <div className="w-10 h-10 bg-[#FFE9E1] rounded-full flex items-center justify-center">
+                <CartIcon color="#F56630" className="h-4 w-4 text-[#F24E1E]" />
+              </div>
+              <span className="text-xs">Appraise Loan</span>
             </Button>
           </div>
         </section>

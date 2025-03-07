@@ -226,10 +226,10 @@ export default function GetLoanPage() {
     <div className="min-h-screen bg-white p-6">
       <Button
         onClick={() => router.push("/dashboard")}
-        className="flex text-lg"
-        variant="ghost"
+        className="flex items-center gap-2 text-lg px-0 text-black"
+        variant="link"
       >
-        <ArrowLeft /> Back
+        <ArrowLeft className="h-4 w-4" /> Back
       </Button>
 
       <div className="max-w-md py-4 mx-auto">
